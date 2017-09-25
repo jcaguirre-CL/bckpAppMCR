@@ -1,0 +1,5 @@
+#!/bin/bash
+
+forever stop jca
+forever start --uid "jca" --append -l /opt/forever/logtail-appMCR -e /opt/forever/logtail-appMCR.e -o /opt/forever/logtail-appMCR.o bin/www
+
